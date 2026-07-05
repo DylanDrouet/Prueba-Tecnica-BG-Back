@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="CarritoCompras.Api/CarritoCompras.Api.csproj" />
+  <Project Path="CarritoCompras.Domain/CarritoCompras.Domain.csproj" />
+  <Project Path="CarritoCompras.Infrastructure/CarritoCompras.Infrastructure.csproj" />
+</Solution>
