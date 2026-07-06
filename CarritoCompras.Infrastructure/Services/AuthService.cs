@@ -20,6 +20,11 @@ public class AuthService : IAuthService
 
     public async Task<LoginResponseDto?> LoginAsync(LoginRequestDto request)
     {
+        if (string.IsNullOrWhiteSpace(request.Username) || string.IsNullOrWhiteSpace(request.Password))
+        {
+            return null;
+        }
+
         var user = await _context.Users
             .FirstOrDefaultAsync(u => u.Username == request.Username);
 
